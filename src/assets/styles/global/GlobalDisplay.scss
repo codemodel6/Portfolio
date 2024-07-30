@@ -1,0 +1,31 @@
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 자주 쓰는 display 정리
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+.centerRow {
+  display: 'flex';
+  flex-direction: 'row';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.centerColumn {
+  display: 'flex';
+  flex-direction: 'column';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.betweenRow {
+  display: 'flex';
+  flex-direction: 'row';
+  justify-content: 'space-between';
+  align-items: 'center';
+}
+
+.aroundRow {
+  display: 'flex';
+  flex-direction: 'row';
+  justify-content: 'space-around';
+  align-items: 'center';
+}
