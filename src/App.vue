@@ -4,8 +4,8 @@ import TheHeader from './components/organism/TheHeader.vue'
 
 <template>
   <div id="app">
-    <router-view />
     <TheHeader />
+    <router-view />
   </div>
 </template>
 

@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="header-wrapper"></div>
+  <header class="header-wrapper"></header>
 </template>
 
 <style lang="scss">
-@import '../../assets/styles/color/ColorNote.scss';
+@import '@/assets/styles/color/ColorNote.scss';
 
 .header-wrapper {
   background-color: $Sub100;

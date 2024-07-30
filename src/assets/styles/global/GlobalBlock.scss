@@ -9,6 +9,11 @@
   height: 100vh;
 }
 
+.global-first-block {
+  @extend .global-block;
+  padding-top: 90px;
+}
+
 .global-center-block {
   @extend .global-block;
   justify-content: center;
