@@ -7,8 +7,6 @@
   <header>
     <div class="wrapper"></div>
   </header>
-
-  <!-- <HomePage></HomePage> -->
 </template>
 
 <style scoped></style>
