@@ -1,11 +1,23 @@
 <script setup lang="ts">
-const hi = '1'
+import TheMarquee from '@/components/molecule/TheMarquee.vue'
 </script>
 
 <template lang="">
   <div class="global-first-block">
-    <div>{{ hi }}</div>
+    <TheMarquee />
+    <div class="home-wrapper">
+      <div>hi</div>
+    </div>
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import '@/assets/styles/global/GlobalDisplay.scss';
+
+.home-wrapper {
+  @include betweenRow;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+</style>
