@@ -43,10 +43,10 @@
 
 @keyframes marquee {
   0% {
-    left: 0;
+    right: 0;
   }
   100% {
-    left: -100%;
+    right: -100%;
   }
 }
 </style>
