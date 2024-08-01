@@ -14,7 +14,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Shilla_CultureB-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --pretendard-font: 'Pretendard-Regular', sans-serif; // 전역 폰트
   --dunggeunmo-font: 'DungGeunMo', sans-serif; // 도트 폰트
+  --shilla-font: 'Shilla_CultureB-Bold', sans-serif; // 타이틀 폰트
 }

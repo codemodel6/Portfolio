@@ -3,10 +3,10 @@
 <template>
   <div class="marquee">
     <div>
-      <span>방문을 환영합니다!</span>
-      <span>방문을 환영합니다!</span>
-      <span>방문을 환영합니다!</span>
-      <span>방문을 환영합니다!</span>
+      <span>Welocme</span>
+      <span>Welocme</span>
+      <span>Welocme</span>
+      <span>Welocme</span>
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@
   height: 30px;
   position: absolute;
   overflow: hidden;
-  animation: marquee 20s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 .marquee span {
