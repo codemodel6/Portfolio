@@ -1,18 +1,22 @@
 <script setup lang="ts">
 import codemodel6 from '../../assets/styles/image/homeImg/codemodel6.jpg'
+import TheMarquee from '../molecule/TheMarquee.vue'
 </script>
 
 <template>
-  <div class="home-title-wrapper">Drawing Rice</div>
-  <div class="home-wrapper">
-    <div class="home-image-wrapper">
-      <img :src="codemodel6" :alt="codemodel6" />
-    </div>
-    <div class="home-intro-wrapper">
-      <span class="intro-title">김경배</span>
-      <span class="intro-sub-title">나는 누구인가</span>
-      <div class="intro-skill"></div>
-      <div class="intro-info"></div>
+  <div class="global-first-block">
+    <TheMarquee />
+    <div class="home-title-wrapper">Drawing Rice</div>
+    <div class="home-main-wrapper">
+      <div class="home-image-wrapper">
+        <img :src="codemodel6" :alt="codemodel6" />
+      </div>
+      <div class="home-intro-wrapper">
+        <span class="intro-title">김경배</span>
+        <span class="intro-sub-title">나는 누구인가</span>
+        <div class="intro-skill"></div>
+        <div class="intro-info"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -21,7 +25,7 @@ import codemodel6 from '../../assets/styles/image/homeImg/codemodel6.jpg'
 @import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
 
-.home-wrapper {
+.home-main-wrapper {
   @include betweenRow;
   width: 90%;
   height: 80%;

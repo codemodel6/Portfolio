@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 100vh;
 }
 
@@ -17,5 +17,20 @@
 
 .global-center-block {
   @extend .global-block;
+  justify-content: center;
+}
+
+.global-full-block {
+  @extend .global-block;
+  width: 100%;
+}
+
+.global-full-first-block {
+  @extend .global-full-block;
+  padding-top: 90px;
+}
+
+.global-full-center-block {
+  @extend .global-full-block;
   justify-content: center;
 }

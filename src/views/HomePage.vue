@@ -1,13 +1,19 @@
 <script setup lang="ts">
-import HomeIntro from '@/components/homePage/HomeIntro.vue'
-import TheMarquee from '@/components/molecule/TheMarquee.vue'
+import HomeMain from '@/components/homePage/HomeMain.vue'
+import HomeInfo from '@/components/homePage/HomeInfo.vue'
 </script>
 
 <template>
-  <div class="global-first-block">
-    <TheMarquee />
-    <HomeIntro />
+  <div class="home-wrapper">
+    <HomeMain />
+    <HomeInfo />
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import '@/assets/styles/global/GlobalDisplay.scss';
+.home-wrapper {
+  @include centerColumn;
+  width: 90%;
+}
+</style>
