@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import TheTitle from '../molecule/TheTitle.vue'
 import CareerList from './CareerList.vue'
-import { careerData } from '@/data/careerData'
 </script>
 
 <template>
