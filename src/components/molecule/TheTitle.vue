@@ -16,7 +16,7 @@ const props = defineProps<{
   @include centerRow;
   height: 20%;
   width: 100%;
-  font-size: $xxlarge;
+  font-size: $xxxlarge;
   font-family: var(--shilla-font);
 }
 </style>

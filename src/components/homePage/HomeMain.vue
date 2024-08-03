@@ -36,7 +36,7 @@ import TheTitle from '../molecule/TheTitle.vue'
   @include centerRow;
   height: 20%;
   width: 100%;
-  font-size: $xxlarge;
+  font-size: $xxxlarge;
   font-family: var(--shilla-font);
 }
 
@@ -62,7 +62,7 @@ import TheTitle from '../molecule/TheTitle.vue'
   background-color: yellow;
 
   .intro-title {
-    font-size: $xlarge;
+    font-size: $xxlarge;
     margin-bottom: 10px;
     background-color: orange;
   }
