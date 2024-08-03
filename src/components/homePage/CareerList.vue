@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { careerData } from '@/data/careerData'
+</script>
 
 <template>
   <div class="career-list-wrapper">
-    <div class="career-list-title">VMS</div>
-    <div class="career-list-contents">VMS 내용을 길게 쓸껍니다</div>
+    <div class="career-block" v-for="(it, idx) in careerData" :key="idx">
+      <div class="career-list-title">{{ it.title }}</div>
+      <div class="career-list-contents">{{ it.contents }}</div>
+    </div>
   </div>
 </template>
 
@@ -12,24 +16,32 @@
 @import '@/assets/styles/color/ColorNote.scss';
 
 .career-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  @include centerColumn;
   width: 85%;
-  height: 85%;
+  height: 3000px;
   background-color: orange;
+  overflow: scroll;
 
-  .career-list-title {
-    height: 20%;
-    font-weight: bold;
-    font-size: $xlarge;
-  }
+  .career-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    margin-bottom: 50px;
 
-  .career-list-contents {
-    height: 80%;
-    background-color: green;
-    font-size: $small;
+    .career-list-title {
+      height: 20%;
+      font-weight: bold;
+      font-size: $large;
+    }
+
+    .career-list-contents {
+      height: 50%;
+      background-color: green;
+      font-size: $small;
+    }
   }
 }
 </style>
