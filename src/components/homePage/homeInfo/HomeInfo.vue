@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import CertificateBlock from './CertificateBlock.vue'
 import InfoBlock from './InfoBlock.vue'
-import { schoolData, codeData } from '@/data/infoData'
+import { schoolData, codeData, certificateData } from '@/data/infoData'
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import { schoolData, codeData } from '@/data/infoData'
       <InfoBlock :infoData="schoolData" />
       <InfoBlock :infoData="codeData" />
       <div class="home-info-title">자격증</div>
-      <!-- <InfoBlock /> -->
+      <CertificateBlock :certificateData="certificateData" />
     </div>
   </div>
 </template>
@@ -29,8 +30,7 @@ import { schoolData, codeData } from '@/data/infoData'
   .home-info-title {
     font-size: $large;
     width: 100%;
-    height: 50px;
-    background-color: orange;
+    margin-bottom: 15px;
   }
 }
 </style>

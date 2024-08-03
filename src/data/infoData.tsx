@@ -1,11 +1,16 @@
+interface ContentsProps {
+  contents: string
+}
+
 export interface InfoDataProps {
   title: string
   day: string
   contentsList: ContentsProps[]
 }
 
-interface ContentsProps {
-  contents: string
+export interface CertificateProps {
+  title: string
+  day: string
 }
 
 export const schoolData: InfoDataProps = {
@@ -30,3 +35,22 @@ export const codeData: InfoDataProps = {
     { contents: '페어프로그래밍, 협업 프로젝트(git), 멘토링 진행' }
   ]
 }
+
+export const certificateData: CertificateProps[] = [
+  {
+    title: '정보 처리 기사',
+    day: '2022.11'
+  },
+  {
+    title: '​SQLD',
+    day: '2023.10'
+  },
+  {
+    title: '리눅스 마스터 2급',
+    day: '2021.07'
+  },
+  {
+    title: '컴퓨터 활용능력 2급',
+    day: '2021.04'
+  }
+]

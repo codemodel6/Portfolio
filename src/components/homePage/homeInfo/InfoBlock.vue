@@ -27,7 +27,10 @@ const props = defineProps<{
 .home-info-block {
   @include betweenRow;
   width: 100%;
-  height: 250px;
+  height: 220px;
+  background-color: green;
+  margin-bottom: 20px;
+  border-radius: 15px;
 
   .info-block-title-wrapper {
     @include centerColumn;
@@ -37,7 +40,8 @@ const props = defineProps<{
     .info-block-title {
       font-size: $xsmall;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 
@@ -47,13 +51,13 @@ const props = defineProps<{
     justify-content: center;
     width: 65%;
     height: 100%;
-    font-size: $large;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     padding-left: 30px;
 
     .info-block-contents {
       font-size: $xsmall;
-      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
