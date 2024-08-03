@@ -8,10 +8,6 @@
   align-items: center;
   width: 90%;
   height: 100vh;
-}
-
-.global-first-block {
-  @extend .global-block;
   padding-top: 90px;
 }
 
@@ -23,11 +19,6 @@
 .global-full-block {
   @extend .global-block;
   width: 100%;
-}
-
-.global-full-first-block {
-  @extend .global-full-block;
-  padding-top: 90px;
 }
 
 .global-full-center-block {

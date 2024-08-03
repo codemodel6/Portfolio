@@ -12,7 +12,7 @@
   z-index: 100;
   position: fixed;
   width: 100%;
-  border-bottom: 3px solid $Primary100;
+  border-bottom: 2px solid $Primary100;
   height: 90px;
 }
 </style>

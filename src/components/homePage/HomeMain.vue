@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import codemodel6 from '../../assets/styles/image/homeImg/codemodel6.jpg'
 import TheMarquee from '../molecule/TheMarquee.vue'
+import TheTitle from '../molecule/TheTitle.vue'
 </script>
 
 <template>
-  <div class="global-first-block">
+  <div class="global-full-block">
     <TheMarquee />
-    <div class="home-title-wrapper">Drawing Rice</div>
+    <TheTitle title="Frontend Developer" />
     <div class="home-main-wrapper">
       <div class="home-image-wrapper">
         <img :src="codemodel6" :alt="codemodel6" />

@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheTitle from '../molecule/TheTitle.vue'
+</script>
 
 <template>
   <div class="global-block">
+    <TheTitle title="Career" />
     <div class="home-info-wrapper"></div>
   </div>
 </template>
@@ -11,8 +14,7 @@
 @import '@/assets/styles/color/ColorNote.scss';
 
 .home-info-wrapper {
-  width: 90%;
-  height: 100%;
+  width: 100%;
   background-color: orange;
 }
 </style>

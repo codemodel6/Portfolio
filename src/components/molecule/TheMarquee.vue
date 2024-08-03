@@ -20,7 +20,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  border-bottom: 3px solid $Primary100;
+  border-bottom: 2px solid $Primary100;
 }
 
 .marquee div {
