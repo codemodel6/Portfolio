@@ -5,16 +5,16 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="home-title-wrapper">{{ title }}</div>
+  <div class="the-title-wrapper">{{ title }}</div>
 </template>
 
 <style lang="scss">
 @import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
 
-.home-title-wrapper {
+.the-title-wrapper {
   @include centerRow;
-  height: 20%;
+  height: 20vh;
   width: 100%;
   font-size: $xxxlarge;
   font-family: var(--shilla-font);

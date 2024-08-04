@@ -23,7 +23,7 @@ import { schoolData, codeData, certificateData } from '@/data/infoData'
 .home-info-wrapper {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   height: 100%;
   background-color: red;
 

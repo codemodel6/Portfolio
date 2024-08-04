@@ -2,6 +2,7 @@
 import HomeMain from '@/components/homePage/HomeMain.vue'
 import HomeCareer from '@/components/homePage/HomeCareer.vue'
 import HomeInfo from '@/components/homePage/homeInfo/HomeInfo.vue'
+import HomeProject from '@/components/homePage/homeProject/HomeProject.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import HomeInfo from '@/components/homePage/homeInfo/HomeInfo.vue'
     <HomeMain />
     <HomeCareer />
     <HomeInfo />
+    <HomeProject />
   </div>
 </template>
 

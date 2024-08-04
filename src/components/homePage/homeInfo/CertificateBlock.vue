@@ -26,23 +26,24 @@ const props = defineProps<{
 @import '@/assets/styles/color/ColorNote.scss';
 
 .home-certificate-block {
-  @include betweenRow;
+  @include aroundRow;
   width: 100%;
   height: 220px;
-  background-color: green;
   margin-bottom: 20px;
   border-radius: 15px;
+  background-color: green;
 
   .certificate-wrapper {
     @include centerColumn;
     font-size: $xsmall;
     height: 100%;
     width: 30%;
+    background-color: yellow;
 
     .certificate-span {
       @include centerColumn;
       height: 2.5rem;
-      /* background-color: orange; */
+      font-weight: bold;
     }
   }
 }
