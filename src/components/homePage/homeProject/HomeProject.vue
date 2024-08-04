@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import TheTitle from '@/components/molecule/TheTitle.vue'
 import ProjectItem from './ProjectItem.vue'
+import { ProjectData } from '@/data/projectData'
 </script>
 
 <template>
   <div class="home-project-wrapper">
     <TheTitle title="Project" />
-    <ProjectItem :reverse="false" infoColor="#0705ef" />
-    <ProjectItem :reverse="true" infoColor="#ff0000" />
+    <ProjectItem v-for="(item, index) in ProjectData" :key="index" :item="item" />
   </div>
 </template>
 

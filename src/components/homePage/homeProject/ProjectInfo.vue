@@ -1,24 +1,25 @@
 <script setup lang="ts">
+import type { ProjectProps } from '@/data/projectData'
+
 const props = defineProps<{
-  infoColor: string
+  item: ProjectProps
 }>()
 
 const styleObject = {
-  '--info-color': props.infoColor
+  '--info-color': props.item.infoColor
 }
 </script>
 
 <template>
   <div class="home-project-info" :style="styleObject">
-    <span class="project-title">뮤툰 (MewToon)</span>
-    <span class="project-sub-title">웹툰 노래 추천 사이트</span>
+    <span class="project-title">{{ item.title }}</span>
+    <span class="project-sub-title">{{ item.subTitle }}</span>
     <span class="project-contents">
-      뮤툰은 웹툰에 음악을 함께 들으면 생생함과 재미가 살아나는
-      <br />아이디어를 토대로 만들어진 사이트입니다.
+      {{ item.content }}
     </span>
-    <span class="project-tool"> <span class="tool-name">[배포]</span> mewtoon.netlify.app</span>
-    <span class="project-tool"> <span class="tool-name">[배포]</span> mewtoon.netlify.app</span>
-    <span class="project-tool"> <span class="tool-name">[배포]</span> mewtoon.netlify.app</span>
+    <span class="project-tool"> <span class="tool-name">[배포]</span>{{ item.link1 }}</span>
+    <span class="project-tool"> <span class="tool-name">[배포]</span>{{ item.link2 }}</span>
+    <span class="project-tool"> <span class="tool-name">[배포]</span>{{ item.link3 }}</span>
   </div>
 </template>
 

@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import ProjectPreview from './ProjectPreview.vue'
 import ProjectInfo from './ProjectInfo.vue'
+import type { ProjectProps } from '@/data/projectData'
 
 const props = defineProps<{
-  reverse: boolean // 왼쪽 오른쪽을 구분해줄 값
-  infoColor: string
+  item: ProjectProps
 }>()
 </script>
 
 <template>
-  <div class="project-item-wrapper" v-if="reverse">
-    <ProjectPreview />
-    <ProjectInfo :infoColor="infoColor" />
+  <div class="project-item-wrapper" v-if="item.reverse">
+    <ProjectPreview :item="item" />
+    <ProjectInfo :item="item" />
   </div>
   <div class="project-item-wrapper" v-else>
-    <ProjectInfo :infoColor="infoColor" />
-    <ProjectPreview />
+    <ProjectInfo :item="item" />
+    <ProjectPreview :item="item" />
   </div>
 </template>
 
@@ -27,6 +27,5 @@ const props = defineProps<{
   @include centerRow;
   width: 100%;
   height: 70vh;
-  /* background-color: royalblue; */
 }
 </style>
