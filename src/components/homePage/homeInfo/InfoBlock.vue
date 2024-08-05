@@ -27,8 +27,8 @@ const props = defineProps<{
 .home-info-block {
   @include betweenRow;
   width: 100%;
-  height: 220px;
-  background-color: green;
+  height: 210px;
+  background-color: $White100;
   margin-bottom: 20px;
   border-radius: 15px;
 
@@ -51,7 +51,6 @@ const props = defineProps<{
     justify-content: center;
     width: 65%;
     height: 100%;
-    /* background-color: royalblue; */
     padding-left: 30px;
 
     .info-block-contents {

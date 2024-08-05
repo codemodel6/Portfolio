@@ -28,17 +28,16 @@ const props = defineProps<{
 .home-certificate-block {
   @include aroundRow;
   width: 100%;
-  height: 220px;
+  height: 210px;
   margin-bottom: 20px;
   border-radius: 15px;
-  background-color: green;
+  background-color: $Sub100;
 
   .certificate-wrapper {
     @include centerColumn;
     font-size: $xsmall;
     height: 100%;
     width: 30%;
-    background-color: yellow;
 
     .certificate-span {
       @include centerColumn;
