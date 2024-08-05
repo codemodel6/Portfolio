@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import mewToon1 from '@/assets/styles/image/projectImg/mewToon1.gif'
-import mewToon2 from '@/assets/styles/image/projectImg/mewToon2.gif'
 import type { ProjectProps } from '@/data/projectData'
 
 const props = defineProps<{
   item: ProjectProps
 }>()
+
+const styleObject = {
+  '--project-color': props.item.projectColor
+}
 </script>
 
 <template>
-  <div class="home-project-preview">
+  <div class="home-project-preview" :style="styleObject">
     <div class="project-block">
       <img :src="item.img1" alt="첫번째 gif" />
       <span class="project-block-title"> {{ item.preview1 }}</span>
@@ -43,6 +45,8 @@ const props = defineProps<{
       width: 40%;
       font-size: $small;
       font-weight: bold;
+      white-space: pre-line;
+      color: var(--project-color);
     }
 
     img {
