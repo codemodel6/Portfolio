@@ -1,13 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="header-wrapper"></header>
+  <header class="the-header-wrapper"></header>
 </template>
 
 <style lang="scss">
 @import '@/assets/styles/color/ColorNote.scss';
 
-.header-wrapper {
+.the-header-wrapper {
   background-color: $Sub100;
   z-index: 100;
   position: fixed;

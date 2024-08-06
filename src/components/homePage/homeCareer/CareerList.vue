@@ -43,12 +43,16 @@ import { careerData } from '@/data/careerData'
     .career-list-contents {
       padding: 2%;
       width: 85%;
-      height: 100%;
+      /* height: 100%; */
       font-size: $small;
       background-color: $White100;
       border-radius: 20px;
       margin-bottom: 5%;
       color: $Gray100;
+
+      /* &:hover {
+        height: 500px;
+      } */
     }
   }
 }

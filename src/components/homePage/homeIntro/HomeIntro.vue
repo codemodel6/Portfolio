@@ -33,7 +33,6 @@
   flex-direction: column;
   width: 60%;
   height: 100%;
-  background-color: orange;
 
   .intro-title {
     font-size: $large;
