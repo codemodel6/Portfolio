@@ -24,6 +24,7 @@ button {
 
 body {
   -ms-overflow-style: none;
+  min-height: 100vh;
 }
 
 ::-webkit-scrollbar {
