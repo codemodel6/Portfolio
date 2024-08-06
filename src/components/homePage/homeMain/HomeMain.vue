@@ -14,38 +14,38 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     <TheMarquee />
     <TheTitle title="Frontend Developer" />
     <div class="home-main-wrapper">
-      <div class="home-image-wrapper">
+      <div class="main-image-wrapper">
         <img :src="codemodel6" :alt="codemodel6" />
       </div>
-      <div class="home-intro-wrapper">
-        <div class="intro-title-wrapper">
+      <div class="main-intro-wrapper">
+        <div class="main-title-wrapper">
           <span class="title-name">김경배</span>
           <span class="title-birth">1998.04.21.</span>
         </div>
-        <span class="intro-sub-title"
+        <span class="main-sub-title"
           >코드 품질, 커뮤니케이션, 책임감을 중요시 여기는<br />프론트엔드 개발자 입니다</span
         >
-        <img class="intro-skill-img" :src="skill" />
-        <div class="intro-info">
-          <div class="intro-line">
+        <img class="main-skill-img" :src="skill" />
+        <div class="main-info">
+          <div class="main-line">
             <img :src="github" alt="github" />
-            <a class="intro-link" href="https://github.com/codemodel6"
+            <a class="main-link" href="https://github.com/codemodel6"
               >https://github.com/codemodel6</a
             >
           </div>
-          <div class="intro-line">
+          <div class="main-line">
             <img :src="velog" alt="velog" />
-            <a class="intro-link" href="https://github.com/codemodel6"
+            <a class="main-link" href="https://github.com/codemodel6"
               >https://velog.io/@codemodel6</a
             >
           </div>
-          <div class="intro-line">
+          <div class="main-line">
             <img :src="gmail" alt="gmail" />
-            <a class="intro-link" href="https://github.com/codemodel6"> codemodel6@gmail.com</a>
+            <a class="main-link" href="https://github.com/codemodel6"> codemodel6@gmail.com</a>
           </div>
-          <div class="intro-line">
+          <div class="main-line">
             <img :src="phone" alt="phone" />
-            <span class="intro-link">010 6625 0937</span>
+            <span class="main-link">010 6625 0937</span>
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   height: 80%;
 }
 
-.home-image-wrapper {
+.main-image-wrapper {
   display: flex;
   justify-content: end;
-  width: 42%;
+  width: 43%;
   height: 100%;
 
   img {
@@ -76,13 +76,13 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   }
 }
 
-.home-intro-wrapper {
+.main-intro-wrapper {
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 100%;
 
-  .intro-title-wrapper {
+  .main-title-wrapper {
     margin-bottom: 15px;
 
     .title-name {
@@ -97,19 +97,19 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     }
   }
 
-  .intro-sub-title {
+  .main-sub-title {
     font-size: $small;
     margin-bottom: 30px;
     white-space: pre-line;
   }
 
-  .intro-skill-img {
+  .main-skill-img {
     width: 80%;
     height: 45%;
     margin-bottom: 30px;
   }
 
-  .intro-info {
+  .main-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +121,7 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     padding: 0.6rem;
     border-radius: 10px;
 
-    .intro-line {
+    .main-line {
       display: flex;
       align-items: center;
       width: 45%;
@@ -130,9 +130,10 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
       img {
         width: 10%;
         height: 100%;
+        border-radius: 50%;
       }
 
-      .intro-link {
+      .main-link {
         margin-left: 0.8rem;
         font-size: $xxsmall;
       }
