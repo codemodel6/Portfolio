@@ -22,12 +22,17 @@ import CareerList from './CareerList.vue'
 <style lang="scss">
 @import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
+$building: '../../../assets/styles/image/careerImg/building.jpg';
 
 .home-career-wrapper {
   @include betweenRow;
   width: 100%;
   height: 100%;
   overflow: scroll;
+  background-image: url(#{$building});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .company-wrapper {
@@ -37,18 +42,18 @@ import CareerList from './CareerList.vue'
   justify-content: center;
   width: 35%;
   height: 100%;
-  background-color: red;
+  color: $White100;
 
   .company-title {
-    font-size: $xxlarge;
+    font-size: $xxxlarge;
   }
 
   .company-contents {
-    font-size: $small;
+    font-size: $medium;
   }
 
   .company-day {
-    font-size: $xsmall;
+    font-size: $small;
   }
 }
 
@@ -56,6 +61,5 @@ import CareerList from './CareerList.vue'
   @include centerColumn;
   width: 65%;
   height: 100%;
-  background-color: blue;
 }
 </style>

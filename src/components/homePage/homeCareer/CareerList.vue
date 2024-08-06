@@ -16,10 +16,9 @@ import { careerData } from '@/data/careerData'
 @import '@/assets/styles/color/ColorNote.scss';
 
 .career-list-wrapper {
-  @include centerColumn;
+  display: flex;
+  flex-direction: column;
   width: 85%;
-  height: 3000px;
-  background-color: orange;
   overflow: scroll;
 
   .career-block {
@@ -27,20 +26,29 @@ import { careerData } from '@/data/careerData'
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 500px;
-    background-color: gray;
-    margin-bottom: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 30px;
 
     .career-list-title {
-      height: 20%;
+      @include centerColumn;
+      width: 100%;
       font-weight: bold;
-      font-size: $large;
+      font-size: $xlarge;
+      color: $Black100;
+      margin-bottom: 2%;
     }
 
     .career-list-contents {
-      height: 50%;
-      background-color: green;
+      padding: 2%;
+      width: 85%;
+      height: 100%;
       font-size: $small;
+      background-color: $White100;
+      border-radius: 20px;
+      margin-bottom: 5%;
+      color: $Gray100;
     }
   }
 }
