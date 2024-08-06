@@ -3,12 +3,14 @@ import HomeMain from '@/components/homePage/homeMain/HomeMain.vue'
 import HomeCareer from '@/components/homePage/homeCareer/HomeCareer.vue'
 import HomeInfo from '@/components/homePage/homeInfo/HomeInfo.vue'
 import HomeProject from '@/components/homePage/homeProject/HomeProject.vue'
+import HomeIntro from '@/components/homePage/homeIntro/HomeIntro.vue'
 </script>
 
 <template>
   <div class="home-wrapper">
     <HomeMain />
     <HomeCareer />
+    <HomeIntro />
     <HomeInfo />
     <HomeProject />
   </div>

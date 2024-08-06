@@ -25,3 +25,8 @@
   @extend .global-full-block;
   justify-content: center;
 }
+
+.global-half-block {
+  @extend .global-block;
+  height: 50vh;
+}

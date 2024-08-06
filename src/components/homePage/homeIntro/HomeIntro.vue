@@ -1,9 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="home-info-title">
-    <div class="info-title">김경배는 누구인가요?</div>
-    <div class="info-contents">어쩌구 저쩌구</div>
+  <div class="global-half-block">
+    <div class="home-intro-wrappe">
+      <div class="intro-title">김경배는 누구인가요?</div>
+      <div class="intro-contents">어쩌구 저쩌구</div>
+    </div>
   </div>
 </template>
 
@@ -11,19 +13,19 @@
 @import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
 
-.home-info-title {
+.home-intro-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 30%;
+  width: 80%;
+  height: 100%;
 
-  .info-title {
+  .intro-title {
     font-size: $large;
     font-weight: bold;
     height: 20%;
   }
 
-  .info-contents {
+  .intro-contents {
     background-color: orange;
     width: 80%;
     font-size: $small;
