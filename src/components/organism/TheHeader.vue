@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const introRoute = computed(() => route.path === '/') // 인트로 페이지일 경우 보여주지 않음
+</script>
 
 <template>
-  <header class="the-header-wrapper">
+  <header class="the-header-wrapper" v-if="!introRoute">
     <div class="header-logo-wrapper">
       <div class="logo-item">Codemodel6</div>
       <div class="text-item">

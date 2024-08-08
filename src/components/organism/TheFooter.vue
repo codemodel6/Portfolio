@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const introRoute = computed(() => route.path === '/') // 인트로 페이지일 경우 보여주지 않음
+</script>
 
 <template>
-  <div class="the-footer-wrapper">
+  <div class="the-footer-wrapper" v-if="!introRoute">
     <div className="footer-contents">상호: (주)KBCompany | 대표자명: 김경배</div>
     <div className="footer-contents">
       연락처: 010-6625-0937 | 이메일: codemodel6@gmail.com | 제작: Vue, Typescript, Scss
