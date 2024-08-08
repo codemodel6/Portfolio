@@ -9,9 +9,9 @@ import HomeIntro from '@/components/homePage/homeIntro/HomeIntro.vue'
 <template>
   <div class="home-wrapper">
     <HomeMain />
-    <HomeCareer />
     <HomeIntro />
     <HomeInfo />
+    <HomeCareer />
     <HomeProject />
   </div>
 </template>

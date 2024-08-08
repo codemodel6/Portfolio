@@ -1,16 +1,37 @@
 <script setup lang="ts">
 import type { ProjectProps } from '@/data/projectData'
+import { handleStartAnimation } from '@/function/scroll'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 const props = defineProps<{
   item: ProjectProps
   animation: string
 }>()
 
+const animationToggle = ref(false) // 애니메이션이 실행되었는지 여부를 추적
+const startScrollData = 3500 // 애니메이션을 실행할 스크롤 위치
+
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 훅 기능 : 화면 마운트 시 함수를 실행시키는 훅
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+onMounted(() => {
+  // 익명 함수나 화살표 함수를 사용하여 handleStartAnimation 호출
+  window.addEventListener('scroll', () => handleStartAnimation(startScrollData, animationToggle))
+})
+
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- 훅 기능 : 화면 언마운트 시 함수를 제거하는 훅
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+onUnmounted(() => {
+  // 클린업: 이벤트 리스너 제거 (옵션)
+  window.removeEventListener('scroll', () => handleStartAnimation(startScrollData, animationToggle))
+})
+
 // SCSS에 전달할 props
-const styleObject = {
+const styleObject = computed(() => ({
   '--project-color': props.item.projectColor,
-  '--animation': props.animation
-}
+  '--animation': animationToggle.value ? props.animation : 'none'
+}))
 </script>
 
 <template>

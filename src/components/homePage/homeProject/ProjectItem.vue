@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
 import ProjectPreview from './ProjectPreview.vue'
 import ProjectInfo from './ProjectInfo.vue'
 import type { ProjectProps } from '@/data/projectData'
