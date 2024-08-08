@@ -40,57 +40,5 @@
     background-color: blue;
     animation: bounce-right 1.3s ease-in-out forwards;
   }
-
-  @keyframes bounce-right {
-    0% {
-      right: -55%;
-    }
-
-    70% {
-      right: 0%;
-    }
-
-    80% {
-      right: -3%;
-    }
-
-    90% {
-      right: 0%;
-    }
-
-    95% {
-      right: -1%;
-    }
-
-    100% {
-      right: 0%;
-    }
-  }
-
-  @keyframes bounce-left {
-    0% {
-      left: -55%;
-    }
-
-    70% {
-      left: 0%;
-    }
-
-    80% {
-      left: -3%;
-    }
-
-    90% {
-      left: 0%;
-    }
-
-    95% {
-      left: -1%;
-    }
-
-    100% {
-      left: 0%;
-    }
-  }
 }
 </style>

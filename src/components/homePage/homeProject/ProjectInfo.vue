@@ -3,10 +3,12 @@ import type { ProjectProps } from '@/data/projectData'
 
 const props = defineProps<{
   item: ProjectProps
+  animation: string
 }>()
 
 const styleObject = {
-  '--project-color': props.item.projectColor
+  '--project-color': props.item.projectColor,
+  '--animation': props.animation
 }
 </script>
 
@@ -45,6 +47,8 @@ const styleObject = {
   padding-top: 8%;
   padding-left: 8%;
   color: white;
+  position: relative;
+  animation: var(--animation);
 
   .project-title {
     font-size: $xlarge;

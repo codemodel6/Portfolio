@@ -3,10 +3,13 @@ import type { ProjectProps } from '@/data/projectData'
 
 const props = defineProps<{
   item: ProjectProps
+  animation: string
 }>()
 
+// SCSS에 전달할 props
 const styleObject = {
-  '--project-color': props.item.projectColor
+  '--project-color': props.item.projectColor,
+  '--animation': props.animation
 }
 </script>
 
@@ -31,6 +34,8 @@ const styleObject = {
   @include aroundColumn;
   width: 50%;
   height: 100%;
+  position: relative;
+  animation: var(--animation);
 
   .project-block {
     @include aroundRow;
