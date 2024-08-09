@@ -9,14 +9,15 @@ const props = defineProps<{
 }>()
 
 const animationToggle = ref(false) // 애니메이션이 실행되었는지 여부를 추적
-const startScrollData = 3500 // 애니메이션을 실행할 스크롤 위치
 
 /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - 훅 기능 : 화면 마운트 시 함수를 실행시키는 훅
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 onMounted(() => {
   // 익명 함수나 화살표 함수를 사용하여 handleStartAnimation 호출
-  window.addEventListener('scroll', () => handleStartAnimation(startScrollData, animationToggle))
+  window.addEventListener('scroll', () =>
+    handleStartAnimation(props.item.scrollData, animationToggle)
+  )
 })
 
 /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -24,7 +25,9 @@ onMounted(() => {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 onUnmounted(() => {
   // 클린업: 이벤트 리스너 제거 (옵션)
-  window.removeEventListener('scroll', () => handleStartAnimation(startScrollData, animationToggle))
+  window.removeEventListener('scroll', () =>
+    handleStartAnimation(props.item.scrollData, animationToggle)
+  )
 })
 
 // SCSS에 전달할 props
@@ -35,7 +38,11 @@ const styleObject = computed(() => ({
 </script>
 
 <template>
-  <div class="home-project-preview" :style="styleObject">
+  <div
+    class="home-project-preview"
+    :class="props.item.reverse ? 'project-left-position' : 'project-right-position'"
+    :style="styleObject"
+  >
     <div class="project-block">
       <img :src="item.img1" alt="첫번째 gif" />
       <span class="project-block-title"> {{ item.preview1 }}</span>
@@ -57,6 +64,7 @@ const styleObject = computed(() => ({
   height: 100%;
   position: relative;
   animation: var(--animation);
+  animation-fill-mode: forwards;
 
   .project-block {
     @include aroundRow;
@@ -80,5 +88,13 @@ const styleObject = computed(() => ({
       height: 100%;
     }
   }
+}
+
+.project-right-position {
+  right: -55%;
+}
+
+.project-left-position {
+  left: -55%;
 }
 </style>

@@ -20,6 +20,7 @@ export interface ProjectProps {
   img2: string
   preview1: string
   preview2: string
+  scrollData: number
 }
 
 export const ProjectData: ProjectProps[] = [
@@ -36,7 +37,8 @@ export const ProjectData: ProjectProps[] = [
     img1: mewToon1,
     img2: mewToon2,
     preview1: '웹툰 정보를\n빠르게 확인해보세요',
-    preview2: '재미있는 프로젝트를\n즐겨보세요!'
+    preview2: '재미있는 프로젝트를\n즐겨보세요!',
+    scrollData: 2800
   },
   {
     reverse: true,
@@ -51,7 +53,8 @@ export const ProjectData: ProjectProps[] = [
     img1: oracle1,
     img2: oracle2,
     preview1: '상황별 오라클 함수를\n쉽고 빠르게 찾아보세요!',
-    preview2: '대표적인 예시 쿼리와\n실행된 쿼리를 볼 수 있습니다.'
+    preview2: '대표적인 예시 쿼리와\n실행된 쿼리를 볼 수 있습니다.',
+    scrollData: 3400
   },
   {
     reverse: false,
@@ -66,7 +69,8 @@ export const ProjectData: ProjectProps[] = [
     img1: indigo1,
     img2: indigo2,
     preview1: '달력, 지도, 공연검색을 하며\n인디고 사이트를 즐기세요!',
-    preview2: '마크다운에디터로\n자유롭게 글을 작성하세요!'
+    preview2: '마크다운에디터로\n자유롭게 글을 작성하세요!',
+    scrollData: 4000
   },
   {
     reverse: true,
@@ -81,6 +85,7 @@ export const ProjectData: ProjectProps[] = [
     img1: stack1,
     img2: stack2,
     preview1: '궁금한점이나 오류가 났을 때\n언제든지 질문하세요!',
-    preview2: '오류가 난 코드를 작성하여\n사람들과 문제를 공유하세요!'
+    preview2: '오류가 난 코드를 작성하여\n사람들과 문제를 공유하세요!',
+    scrollData: 4600
   }
 ]
