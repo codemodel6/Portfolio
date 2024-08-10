@@ -40,7 +40,7 @@ const styleObject = computed(() => ({
 <template>
   <div
     class="home-project-preview"
-    :class="props.item.reverse ? 'project-left-position' : 'project-right-position'"
+    :class="props.item.reverse ? 'info-right-position' : 'info-left-position'"
     :style="styleObject"
   >
     <div class="project-block">
@@ -65,6 +65,7 @@ const styleObject = computed(() => ({
   position: relative;
   animation: var(--animation);
   animation-fill-mode: forwards;
+  visibility: hidden;
 
   .project-block {
     @include aroundRow;
@@ -91,10 +92,12 @@ const styleObject = computed(() => ({
 }
 
 .project-right-position {
+  display: none;
   right: -55%;
 }
 
 .project-left-position {
+  display: none;
   left: -55%;
 }
 </style>

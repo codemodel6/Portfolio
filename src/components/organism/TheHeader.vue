@@ -39,7 +39,7 @@ const handleNavigate = () => {
   background-color: $Sub100;
   z-index: 100;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   border-bottom: 2px solid $Primary100;
   height: 90px;
 

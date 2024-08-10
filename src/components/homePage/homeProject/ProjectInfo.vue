@@ -77,6 +77,7 @@ const styleObject = computed(() => ({
   position: relative;
   animation: var(--animation);
   animation-fill-mode: forwards;
+  visibility: hidden;
 
   .project-title {
     font-size: $xlarge;
@@ -105,11 +106,13 @@ const styleObject = computed(() => ({
   }
 }
 
-.info-right-position {
+/* .info-right-position {
+  display: none;
   right: -55%;
 }
 
 .info-left-position {
+  display: none;
   left: -55%;
-}
+} */
 </style>

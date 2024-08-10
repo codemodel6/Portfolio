@@ -32,6 +32,7 @@ const props = defineProps<{
 
 @keyframes bounce-right {
   0% {
+    visibility: visible;
     right: -55%;
   }
 
@@ -52,12 +53,14 @@ const props = defineProps<{
   }
 
   100% {
+    visibility: visible;
     right: 0%;
   }
 }
 
 @keyframes bounce-left {
   0% {
+    visibility: visible;
     left: -55%;
   }
 
@@ -78,6 +81,7 @@ const props = defineProps<{
   }
 
   100% {
+    visibility: visible;
     left: 0%;
   }
 }
