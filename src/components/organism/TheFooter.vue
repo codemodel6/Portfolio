@@ -34,7 +34,7 @@ const introRoute = computed(() => route.path === '/') // 인트로 페이지일 
 
   .footer-contents {
     @include centerRow;
-    width: 50%;
+    width: 100%;
     height: 15%;
 
     .bold {
