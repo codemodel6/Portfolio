@@ -68,10 +68,13 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   justify-content: end;
   width: 43%;
   height: 100%;
+  /* background-color: orange; */
 
   img {
-    width: 53%;
-    height: 70%;
+    margin-top: 5%;
+    margin-right: 2%;
+    width: 58%;
+    height: 75%;
     border-radius: 50%;
   }
 }

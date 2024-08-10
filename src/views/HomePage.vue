@@ -14,7 +14,7 @@ import TheEmpty from '@/components/molecule/TheEmpty.vue'
     <HomeCareer />
     <HomeProject />
     <HomeInfo />
-    <TheEmpty height="20vh" />
+    <TheEmpty height="10vh" />
   </div>
 </template>
 

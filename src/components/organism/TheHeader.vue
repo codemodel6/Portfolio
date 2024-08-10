@@ -9,7 +9,7 @@ const introRoute = computed(() => route.path === '/') // 인트로 페이지일 
 <template>
   <header class="the-header-wrapper" v-if="!introRoute">
     <div class="header-logo-wrapper">
-      <div class="logo-item">Codemodel6</div>
+      <button class="logo-item">Codemodel6</button>
       <div class="text-item">
         This is Front-End developer KimKyungBae portfolio. I write readable codes with
         responsibility and aim for clear communication
@@ -39,22 +39,26 @@ const introRoute = computed(() => route.path === '/') // 인트로 페이지일 
 
   .header-logo-wrapper {
     @include betweenRow;
-    width: 30%;
+    width: 40%;
     height: 100%;
     margin-left: 5%;
 
     .logo-item {
-      background-color: orange;
-      height: 100%;
-      width: 30%;
+      @include centerColumn;
+      background-color: black;
+      color: white;
+      height: 50%;
+      width: 40%;
+      font-size: $large;
       margin-right: 5%;
+      font-family: var(--dunggeunmo-font);
     }
 
     .text-item {
       @include centerColumn;
-      background-color: red;
       height: 100%;
-      width: 70%;
+      width: 60%;
+      font-size: $xxsmall;
       font-family: var(--dunggeunmo-font);
     }
   }
@@ -63,10 +67,9 @@ const introRoute = computed(() => route.path === '/') // 인트로 페이지일 
     @include aroundRow;
     width: 40%;
     height: 100%;
-    background-color: blue;
 
     .menu-item {
-      font-size: $small;
+      font-size: $xmedium;
       cursor: pointer;
       background-color: transparent;
       font-family: var(--dunggeunmo-font);
