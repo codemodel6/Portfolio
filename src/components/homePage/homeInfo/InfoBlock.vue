@@ -29,8 +29,8 @@ const props = defineProps<{
   width: 100%;
   height: 28%;
   background-color: $White100;
-  margin-bottom: 15px;
-  border-radius: 15px;
+  margin-bottom: 3%;
+  border-radius: 3%;
 
   .info-block-title-wrapper {
     @include centerColumn;
@@ -40,8 +40,8 @@ const props = defineProps<{
     .info-block-title {
       font-size: $xsmall;
       font-weight: bold;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 2%;
+      margin-bottom: 2%;
     }
   }
 
@@ -55,8 +55,8 @@ const props = defineProps<{
 
     .info-block-contents {
       font-size: $xsmall;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 1%;
+      margin-bottom: 1%;
     }
   }
 }

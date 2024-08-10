@@ -71,6 +71,7 @@ const handleNavigate = () => {
 
       @media (max-width: 768px) {
         width: 80%;
+        margin-right: 0%;
       }
     }
 
