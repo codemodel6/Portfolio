@@ -15,8 +15,8 @@ onMounted(() => {
 <template>
   <div class="intro-page-wrapper">
     <span class="intro-first-word">C</span>
-    <span class="intro-rest-word">odemodel6</span>
-    <span class="intro-portfolio-word">Portfolio</span>
+    <span>odemodel6</span>
+    <span>Portfolio</span>
   </div>
 </template>
 
@@ -44,7 +44,7 @@ onMounted(() => {
     position: absolute;
     font-size: 10rem;
     top: 42%;
-    left: 44%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: opacity-word 1s ease-in;
@@ -55,7 +55,7 @@ onMounted(() => {
   span:nth-child(3) {
     position: absolute;
     font-size: 10rem;
-    top: 60%;
+    top: 62%;
     left: 65%;
     transform: translate(-50%, -50%);
     opacity: 0;
