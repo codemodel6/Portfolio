@@ -39,7 +39,7 @@ import { schoolData, codeData, certificateData } from '@/data/educationData'
     padding-top: 20px;
 
     @media (max-width: 768px) {
-      width: 80%;
+      width: 95%;
     }
   }
 
