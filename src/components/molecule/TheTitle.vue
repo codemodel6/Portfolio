@@ -17,6 +17,6 @@ const props = defineProps<{
   height: 20vh;
   width: 100%;
   font-size: $xxxlarge;
-  font-family: var(--shilla-font);
+  font-family: var(--binggrae-font);
 }
 </style>

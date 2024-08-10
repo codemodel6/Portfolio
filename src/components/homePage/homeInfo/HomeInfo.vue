@@ -7,7 +7,7 @@ import { schoolData, codeData, certificateData } from '@/data/infoData'
 
 <template>
   <div class="global-over-block">
-    <TheTitle title="Information" />
+    <TheTitle title="Education" />
     <div class="home-info-wrapper">
       <div class="home-info-with">
         <div class="home-info-title">학력</div>
