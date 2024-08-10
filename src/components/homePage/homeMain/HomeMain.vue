@@ -97,6 +97,10 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   width: 50%;
   height: 100%;
 
+  @media (max-width: 768px) {
+    @include centerColumn;
+  }
+
   .main-title-wrapper {
     margin-bottom: 15px;
 

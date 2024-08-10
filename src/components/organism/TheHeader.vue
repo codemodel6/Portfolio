@@ -43,11 +43,21 @@ const handleNavigate = () => {
   border-bottom: 2px solid $Primary100;
   height: 90px;
 
+  @media (max-width: 768px) {
+    @include centerRow;
+  }
+
   .header-logo-wrapper {
     @include betweenRow;
     width: 40%;
     height: 100%;
     margin-left: 5%;
+
+    @media (max-width: 768px) {
+      @include centerRow;
+      width: 60%;
+      margin-left: 0%;
+    }
 
     .logo-item {
       @include centerColumn;
@@ -58,6 +68,10 @@ const handleNavigate = () => {
       font-size: $large;
       margin-right: 5%;
       font-family: var(--dunggeunmo-font);
+
+      @media (max-width: 768px) {
+        width: 80%;
+      }
     }
 
     .text-item {
@@ -66,6 +80,10 @@ const handleNavigate = () => {
       width: 60%;
       font-size: $xxsmall;
       font-family: var(--dunggeunmo-font);
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -73,6 +91,10 @@ const handleNavigate = () => {
     @include aroundRow;
     width: 40%;
     height: 100%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     .menu-item {
       font-size: $xmedium;
