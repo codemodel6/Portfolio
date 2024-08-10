@@ -2,7 +2,7 @@ interface ContentsProps {
   contents: string
 }
 
-export interface InfoDataProps {
+export interface EducationDataProps {
   title: string
   day: string
   contentsList: ContentsProps[]
@@ -13,7 +13,7 @@ export interface CertificateProps {
   day: string
 }
 
-export const schoolData: InfoDataProps = {
+export const schoolData: EducationDataProps = {
   title: '성결대학교 컴퓨터공학과',
   day: '2017.03 - 2023.02',
   contentsList: [
@@ -26,7 +26,7 @@ export const schoolData: InfoDataProps = {
   ]
 }
 
-export const codeData: InfoDataProps = {
+export const codeData: EducationDataProps = {
   title: '코드스테이츠 (Code States)',
   day: '2022.08 - 2023.02',
   contentsList: [

@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import TheTitle from '@/components/molecule/TheTitle.vue'
 import CertificateBlock from './CertificateBlock.vue'
-import InfoBlock from './InfoBlock.vue'
-import { schoolData, codeData, certificateData } from '@/data/infoData'
+import EducationBlock from './EducationBlock.vue'
+import { schoolData, codeData, certificateData } from '@/data/educationData'
 </script>
 
 <template>
   <div class="global-over-block">
     <TheTitle title="Education" />
-    <div class="home-info-wrapper">
-      <div class="home-info-with">
-        <div class="home-info-title">학력</div>
-        <InfoBlock :infoData="schoolData" />
-        <InfoBlock :infoData="codeData" />
-        <div class="home-info-title">자격증</div>
+    <div class="home-education-wrapper">
+      <div class="home-education-with">
+        <div class="home-education-title">학력</div>
+        <EducationBlock :educationData="schoolData" />
+        <EducationBlock :educationData="codeData" />
+        <div class="home-education-title">자격증</div>
         <CertificateBlock :certificateData="certificateData" />
       </div>
     </div>
@@ -24,14 +24,14 @@ import { schoolData, codeData, certificateData } from '@/data/infoData'
 @import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
 
-.home-info-wrapper {
+.home-education-wrapper {
   @include centerColumn;
   width: 100%;
   height: 100vh;
   background-color: #b0bfef;
   color: $Black100;
 
-  .home-info-with {
+  .home-education-with {
     width: 60%;
     height: 100%;
     display: flex;
@@ -39,7 +39,7 @@ import { schoolData, codeData, certificateData } from '@/data/infoData'
     padding-top: 20px;
   }
 
-  .home-info-title {
+  .home-education-title {
     font-size: $large;
     width: 100%;
     margin-bottom: 10px;

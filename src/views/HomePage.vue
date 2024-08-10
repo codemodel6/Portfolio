@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HomeMain from '@/components/homePage/homeMain/HomeMain.vue'
 import HomeCareer from '@/components/homePage/homeCareer/HomeCareer.vue'
-import HomeInfo from '@/components/homePage/homeInfo/HomeInfo.vue'
+import HomeEducation from '@/components/homePage/homeEducation/HomeEducation.vue'
 import HomeProject from '@/components/homePage/homeProject/HomeProject.vue'
 import HomeIntro from '@/components/homePage/homeIntro/HomeIntro.vue'
 import TheEmpty from '@/components/molecule/TheEmpty.vue'
@@ -13,7 +13,7 @@ import TheEmpty from '@/components/molecule/TheEmpty.vue'
     <HomeIntro />
     <HomeCareer />
     <HomeProject />
-    <HomeInfo />
+    <HomeEducation />
     <TheEmpty height="10vh" />
   </div>
 </template>

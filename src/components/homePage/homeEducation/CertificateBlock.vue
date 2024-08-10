@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CertificateProps } from '@/data/infoData'
+import type { CertificateProps } from '@/data/educationData'
 
 const props = defineProps<{
   certificateData: CertificateProps[]
