@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { handleScrollMove } from '@/function/scroll'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -16,10 +17,10 @@ const introRoute = computed(() => route.path === '/') // 인트로 페이지일 
       </div>
     </div>
     <div class="header-menu-wrapper">
-      <button class="menu-item">Intro</button>
-      <button class="menu-item">Education</button>
-      <button class="menu-item">Career</button>
-      <button class="menu-item">Project</button>
+      <button class="menu-item" @click="handleScrollMove(0)">Intro</button>
+      <button class="menu-item" @click="handleScrollMove(1050)">Career</button>
+      <button class="menu-item" @click="handleScrollMove(1750)">Project</button>
+      <button class="menu-item" @click="handleScrollMove(4400)">Education</button>
     </div>
   </header>
 </template>
