@@ -137,13 +137,19 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     color: $Sub100;
     width: 80%;
     height: 17%;
-    padding: 0.6rem;
+    padding: 0.4vw;
     border-radius: 10px;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
 
     .main-line {
       display: flex;
       align-items: center;
-      width: 45%;
+      width: 48%;
       height: 30%;
 
       img {
@@ -153,7 +159,7 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
       }
 
       .main-link {
-        margin-left: 0.8rem;
+        margin-left: 0.8vw;
         font-size: $xxsmall;
       }
     }
