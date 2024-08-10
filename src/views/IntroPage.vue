@@ -44,12 +44,20 @@ onMounted(() => {
     position: absolute;
     font-size: $intro-font;
     top: 42%;
-    left: 50%;
+    left: 38%;
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: opacity-word 1s ease-in;
     animation-delay: 3.2s;
     animation-fill-mode: forwards;
+
+    @media (max-width: 1024px) {
+      left: 40%;
+    }
+
+    @media (max-width: 768px) {
+      left: 40%;
+    }
   }
 
   span:nth-child(3) {
@@ -73,7 +81,7 @@ onMounted(() => {
   70% {
     top: 50%;
     transform: translate(-50%, -50%) rotateY(1080deg);
-    left: 50%;
+    left: 50vw;
   }
 
   100% {

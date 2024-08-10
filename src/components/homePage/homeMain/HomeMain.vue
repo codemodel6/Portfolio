@@ -83,11 +83,6 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     width: 58%;
     height: 75%;
     border-radius: 50%;
-
-    @media (max-width: 768px) {
-      margin-top: 0%;
-      margin-right: 0%;
-    }
   }
 }
 
@@ -98,6 +93,7 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   height: 100%;
 
   @media (max-width: 768px) {
+    width: 70%;
     @include centerColumn;
   }
 
