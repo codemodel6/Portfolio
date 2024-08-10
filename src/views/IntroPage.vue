@@ -34,7 +34,7 @@ onMounted(() => {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 10rem;
+    font-size: $intro-font;
     animation: rotate-word 3s ease-out;
     transform: translate(-50%, -50%);
     animation-fill-mode: forwards;
@@ -42,7 +42,7 @@ onMounted(() => {
 
   span:nth-child(2) {
     position: absolute;
-    font-size: 10rem;
+    font-size: $intro-font;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -54,7 +54,7 @@ onMounted(() => {
 
   span:nth-child(3) {
     position: absolute;
-    font-size: 10rem;
+    font-size: $intro-font;
     top: 62%;
     left: 65%;
     transform: translate(-50%, -50%);

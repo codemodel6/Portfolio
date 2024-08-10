@@ -7,6 +7,12 @@
   font-family: var(--pretendard-font);
 }
 
+html {
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
