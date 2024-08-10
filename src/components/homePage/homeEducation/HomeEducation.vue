@@ -37,6 +37,10 @@ import { schoolData, codeData, certificateData } from '@/data/educationData'
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+
+    @media (max-width: 768px) {
+      width: 80%;
+    }
   }
 
   .home-education-title {

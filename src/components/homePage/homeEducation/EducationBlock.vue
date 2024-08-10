@@ -33,7 +33,7 @@ const props = defineProps<{
   height: 28%;
   background-color: $White100;
   margin-bottom: 3%;
-  border-radius: 3%;
+  border-radius: 10px;
 
   .education-block-title-wrapper {
     @include centerColumn;
