@@ -3,10 +3,10 @@
 <template>
   <div class="marquee">
     <div>
-      <span>Welocme</span>
-      <span>Welocme</span>
-      <span>Welocme</span>
-      <span>Welocme</span>
+      <span>Welcome to my portfolio</span>
+      <span>Welcome to my portfolio</span>
+      <span>Welcome to my portfolio</span>
+      <span>Welcome to my portfolio</span>
     </div>
   </div>
 </template>

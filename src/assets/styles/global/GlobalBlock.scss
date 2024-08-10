@@ -29,5 +29,9 @@
 .global-half-block {
   @extend .global-block;
   height: 50vh;
-  // background-color: rebeccapurple;
+}
+
+.global-over-block {
+  @extend .global-block;
+  height: 120vh;
 }

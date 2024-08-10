@@ -4,15 +4,17 @@ import HomeCareer from '@/components/homePage/homeCareer/HomeCareer.vue'
 import HomeInfo from '@/components/homePage/homeInfo/HomeInfo.vue'
 import HomeProject from '@/components/homePage/homeProject/HomeProject.vue'
 import HomeIntro from '@/components/homePage/homeIntro/HomeIntro.vue'
+import TheEmpty from '@/components/molecule/TheEmpty.vue'
 </script>
 
 <template>
   <div class="home-wrapper">
     <HomeMain />
     <HomeIntro />
-    <HomeInfo />
     <HomeCareer />
     <HomeProject />
+    <HomeInfo />
+    <TheEmpty height="20vh" />
   </div>
 </template>
 
