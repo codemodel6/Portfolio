@@ -1,16 +1,21 @@
 <script setup lang="ts">
 import { handleScrollMove } from '@/function/scroll'
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
+const router = useRouter()
 const introRoute = computed(() => route.path === '/') // 인트로 페이지일 경우 보여주지 않음
+
+const handleNavigate = () => {
+  router.push('/')
+}
 </script>
 
 <template>
   <header class="the-header-wrapper" v-if="!introRoute">
     <div class="header-logo-wrapper">
-      <button class="logo-item">Codemodel6</button>
+      <button class="logo-item" @click="handleNavigate">Codemodel6</button>
       <div class="text-item">
         This is Front-End developer KimKyungBae portfolio. I write readable codes with
         responsibility and aim for clear communication
