@@ -38,10 +38,25 @@ export const ProjectData: ProjectProps[] = [
     img2: mewToon2,
     preview1: '웹툰 정보를\n빠르게 확인해보세요',
     preview2: '재미있는 프로젝트를\n즐겨보세요!',
-    scrollData: 2800
+    scrollData: 1400
   },
   {
     reverse: true,
+    projectColor: '#000000',
+    title: '포트폴리오 (Portfolio)',
+    subTitle: 'codemodel6의 포트폴리오',
+    content: 'codemodel6의 경력과 프로젝트 정보를 볼 수 있는\n유용한 정보 사이트입니다.',
+    link1: 'mewtoon.netlify.app',
+    link2: 'https://github.com/codemodel6/Portfolio',
+    link3: 'https://velog.io/',
+    img1: mewToon1,
+    img2: mewToon2,
+    preview1: '인트로의 재미를\n느껴보세요',
+    preview2: 'codemodel6의 프로젝트를\n둘러보세요!',
+    scrollData: 1900
+  },
+  {
+    reverse: false,
     projectColor: '#ff0000',
     title: 'ORACLE DICTIONARY​',
     subTitle: '오라클 함수 정리 사이트',
@@ -54,12 +69,12 @@ export const ProjectData: ProjectProps[] = [
     img2: oracle2,
     preview1: '상황별 오라클 함수를\n쉽고 빠르게 찾아보세요!',
     preview2: '대표적인 예시 쿼리와\n실행된 쿼리를 볼 수 있습니다.',
-    scrollData: 3400
+    scrollData: 2400
   },
   {
-    reverse: false,
+    reverse: true,
     projectColor: '#000066',
-    title: '인디고(Indiego)​',
+    title: '인디고 (Indiego)​',
     subTitle: '공연 밴드 예매 홍보 사이트',
     content:
       '인디고(Indiego)는 일부 지역에 국한되어 있는 문화 컨텐츠를\n가까운 우리 동네에서 즐길 수는 없을까? 라는 질문에서 시작되었습니다.',
@@ -70,10 +85,10 @@ export const ProjectData: ProjectProps[] = [
     img2: indigo2,
     preview1: '달력, 지도, 공연검색을 하며\n인디고 사이트를 즐기세요!',
     preview2: '마크다운에디터로\n자유롭게 글을 작성하세요!',
-    scrollData: 4000
+    scrollData: 2900
   },
   {
-    reverse: true,
+    reverse: false,
     projectColor: '#faa602',
     title: '​STACK OVER FLOW​',
     subTitle: '스택 오버 플로우 클론코딩',
@@ -86,6 +101,6 @@ export const ProjectData: ProjectProps[] = [
     img2: stack2,
     preview1: '궁금한점이나 오류가 났을 때\n언제든지 질문하세요!',
     preview2: '오류가 난 코드를 작성하여\n사람들과 문제를 공유하세요!',
-    scrollData: 4600
+    scrollData: 3400
   }
 ]
