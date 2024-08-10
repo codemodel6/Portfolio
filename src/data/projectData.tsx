@@ -31,7 +31,7 @@ export const ProjectData: ProjectProps[] = [
     subTitle: '웹툰 노래 추천 사이트',
     content:
       '뮤툰은 웹툰에 음악을 함께 들으면 생생함과 재미가 살아나는\n아이디어를 토대로 만들어진 사이트입니다.',
-    link1: 'mewtoon.netlify.app',
+    link1: 'https://mewtoon.netlify.app',
     link2: 'https://github.com/codemodel6/MewToon',
     link3: 'https://velog.io/',
     img1: mewToon1,
@@ -46,7 +46,7 @@ export const ProjectData: ProjectProps[] = [
     title: '포트폴리오 (Portfolio)',
     subTitle: 'codemodel6의 포트폴리오',
     content: 'codemodel6의 경력과 프로젝트 정보를 볼 수 있는\n유용한 정보 사이트입니다.',
-    link1: 'mewtoon.netlify.app',
+    link1: 'https://portfolio-codemodel6s-projects.vercel.app/',
     link2: 'https://github.com/codemodel6/Portfolio',
     link3: 'https://velog.io/',
     img1: mewToon1,
@@ -62,7 +62,7 @@ export const ProjectData: ProjectProps[] = [
     subTitle: '오라클 함수 정리 사이트',
     content:
       '오라클 딕셔너리는 오라클의 함수와 실행을 정리해놓은\n​누구나 쉽게 사용할 수 있는 함수 사전입니다. ',
-    link1: 'oracledictionary.netlify.app',
+    link1: 'https://oracledictionary.netlify.app',
     link2: 'https://github.com/codemodel6/OracleDictionary',
     link3: 'https://velog.io/@codemodel6/Oracle-Dictionary',
     img1: oracle1,
