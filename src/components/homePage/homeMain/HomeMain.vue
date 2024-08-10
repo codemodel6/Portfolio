@@ -61,6 +61,10 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   @include betweenRow;
   width: 90%;
   height: 80%;
+
+  @media (max-width: 768px) {
+    @include centerColumn;
+  }
 }
 
 .main-image-wrapper {
@@ -68,7 +72,10 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   justify-content: end;
   width: 43%;
   height: 100%;
-  /* background-color: orange; */
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 
   img {
     margin-top: 5%;
@@ -76,6 +83,11 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     width: 58%;
     height: 75%;
     border-radius: 50%;
+
+    @media (max-width: 768px) {
+      margin-top: 0%;
+      margin-right: 0%;
+    }
   }
 }
 
