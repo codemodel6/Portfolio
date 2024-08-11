@@ -1,5 +1,7 @@
 import mewToon1 from '@/assets/styles/image/projectImg/mewToon1.gif'
 import mewToon2 from '@/assets/styles/image/projectImg/mewToon2.gif'
+import portfolio1 from '@/assets/styles/image/projectImg/portfolio1.gif'
+import portfolio2 from '@/assets/styles/image/projectImg/portfolio2.gif'
 import oracle1 from '@/assets/styles/image/projectImg/oracle1.jpg'
 import oracle2 from '@/assets/styles/image/projectImg/oracle2.jpg'
 import indigo1 from '@/assets/styles/image/projectImg/indigo1.gif'
@@ -49,8 +51,8 @@ export const ProjectData: ProjectProps[] = [
     link1: 'https://portfolio-codemodel6s-projects.vercel.app/',
     link2: 'https://github.com/codemodel6/Portfolio',
     link3: 'https://velog.io/',
-    img1: mewToon1,
-    img2: mewToon2,
+    img1: portfolio1,
+    img2: portfolio2,
     preview1: '인트로의 재미를\n느껴보세요',
     preview2: 'codemodel6의 프로젝트를\n둘러보세요!',
     scrollData: 1900
