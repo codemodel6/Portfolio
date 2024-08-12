@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
-import ProjectPreview from './ProjectPreview.vue'
-import ProjectInfo from './ProjectInfo.vue'
 import type { ProjectProps } from '@/data/projectData'
+import ProjectInfo from './ProjectInfo.vue'
+import ProjectPreview from './ProjectPreview.vue'
 
 const props = defineProps<{
   item: ProjectProps

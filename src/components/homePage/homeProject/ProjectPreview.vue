@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { ProjectProps } from '@/data/projectData'
-import { handleStartAnimation } from '@/function/scroll'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 const props = defineProps<{
@@ -10,24 +9,48 @@ const props = defineProps<{
 
 const animationToggle = ref(false) // 애니메이션이 실행되었는지 여부를 추적
 
+// DOM 요소를 참조하기 위해 ref 사용
+const previewRef = ref<HTMLDivElement | null>(null)
+
+let observer: IntersectionObserver | null = null
+
 /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - 훅 기능 : 화면 마운트 시 함수를 실행시키는 훅
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 onMounted(() => {
-  // 익명 함수나 화살표 함수를 사용하여 handleStartAnimation 호출
-  window.addEventListener('scroll', () =>
-    handleStartAnimation(props.item.scrollData, animationToggle)
+  // Intersection Observer 설정
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        console.log('--->', entry.isIntersecting)
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active')
+          animationToggle.value = true
+        } else {
+          console.log('else')
+          entry.target.classList.remove('active')
+        }
+      })
+    },
+    {
+      threshold: 0.5 // 50% 이상 요소가 보이면 콜백 실행
+    }
   )
+
+  // 요소를 감시
+  if (previewRef.value) {
+    observer.observe(previewRef.value)
+  }
 })
 
 /** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-- 훅 기능 : 화면 언마운트 시 함수를 제거하는 훅
+- 훅 기능 : 화면 언마운트 시 함수를 실행시키는 훅
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 onUnmounted(() => {
-  // 클린업: 이벤트 리스너 제거 (옵션)
-  window.removeEventListener('scroll', () =>
-    handleStartAnimation(props.item.scrollData, animationToggle)
-  )
+  // 컴포넌트가 언마운트되면 옵저버 해제
+  if (observer && previewRef.value) {
+    observer.unobserve(previewRef.value)
+  }
 })
 
 // SCSS에 전달할 props
@@ -39,6 +62,7 @@ const styleObject = computed(() => ({
 
 <template>
   <div
+    ref="previewRef"
     class="home-project-preview"
     :class="props.item.reverse ? 'info-right-position' : 'info-left-position'"
     :style="styleObject"

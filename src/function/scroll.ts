@@ -19,10 +19,9 @@ interface StartAnimationProps {
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 export const handleStartAnimation: StartAnimationProps = (startScrollData, animationToggle) => {
   const scrollPosition = window.scrollY // 현재의 스크롤 값
-  console.log(scrollPosition)
+  // console.log(scrollPosition)
 
   if (scrollPosition >= startScrollData) {
-    console.log('접근 성공')
     animationToggle.value = true
   }
 }
