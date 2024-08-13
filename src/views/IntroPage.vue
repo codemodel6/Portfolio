@@ -24,6 +24,10 @@ onMounted(() => {
 @import '@/assets/styles/color/ColorNote.scss';
 
 .intro-page-wrapper {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
   height: 100vh;
   min-width: 100vh;
   width: 100%;
@@ -44,8 +48,7 @@ onMounted(() => {
     position: absolute;
     font-size: $intro-font;
     top: 42%;
-    left: 38%;
-    transform: translate(-50%, -50%);
+    transform: translate(90%, -50%);
     opacity: 0;
     animation: opacity-word 1s ease-in;
     animation-delay: 3.2s;
