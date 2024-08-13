@@ -79,9 +79,9 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
 
   img {
     margin-top: 5%;
-    margin-right: 2%;
-    width: 58%;
-    height: 75%;
+    margin-right: 3%;
+    width: 48%;
+    height: 65%;
     border-radius: 50%;
   }
 }
