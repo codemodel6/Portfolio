@@ -83,6 +83,11 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
     width: 48%;
     height: 65%;
     border-radius: 50%;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      height: 75%;
+    }
   }
 }
 
