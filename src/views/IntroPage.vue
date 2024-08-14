@@ -8,89 +8,102 @@ onMounted(() => {
   // 6초 후 홈으로 이동
   setTimeout(() => {
     router.push('/home')
-  }, 6000)
+  }, 7000)
 })
 </script>
 
 <template>
   <div class="intro-page-wrapper">
-    <span class="intro-first-word">C</span>
-    <span>odemodel6</span>
-    <span>Portfolio</span>
+    <div class="intro-span-wrapper">
+      <p>C</p>
+      <p>o</p>
+      <p>d</p>
+      <p>e</p>
+      <p>m</p>
+      <p>o</p>
+      <p>d</p>
+      <p>e</p>
+      <p>l</p>
+      <p>6</p>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
+@import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
 
 .intro-page-wrapper {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   height: 100vh;
   min-width: 100vh;
   width: 100%;
   background-color: black;
   color: white;
 
-  .intro-first-word {
+  .intro-span-wrapper {
     position: absolute;
+    height: 10%;
+    width: 40%;
     top: 50%;
     left: 50%;
-    font-size: $intro-font;
-    animation: rotate-word 3s ease-out;
     transform: translate(-50%, -50%);
-    animation-fill-mode: forwards;
-  }
 
-  span:nth-child(2) {
-    position: absolute;
-    font-size: $intro-font;
-    top: 42%;
-    transform: translate(90%, -50%);
-    opacity: 0;
-    animation: opacity-word 1s ease-in;
-    animation-delay: 3.2s;
-    animation-fill-mode: forwards;
-
-    @media (max-width: 1024px) {
-      left: 40%;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 5%;
+      background-color: white;
+      animation: underline-animation 1.5s ease 3s forwards;
+      animation-delay: 4.5s;
     }
 
-    @media (max-width: 768px) {
-      left: 40%;
+    p {
+      position: absolute;
+      font-size: $intro-font;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      animation-fill-mode: forwards;
+
+      /* @media (max-width: 768px) {
+        font-size: $intro-mobile-font;
+      } */
     }
   }
+}
 
-  span:nth-child(3) {
-    position: absolute;
-    font-size: $intro-font;
-    top: 62%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    animation: opacity-word 1s ease-in;
-    animation-delay: 4.2s;
-    animation-fill-mode: forwards;
+// 각 span의 left값과 animation delay 설정
+@for $i from 1 through 10 {
+  p:nth-child(#{$i}) {
+    left: 5% + (($i - 1) * 10%);
+    @if $i == 1 {
+      animation: rotate-word 3s ease-out;
+    } @else {
+      opacity: 0;
+      animation: opacity-word 1s ease-in-out;
+      animation-delay: 3s + ($i * 0.1s);
+      transform: scaleX(0);
+    }
   }
 }
 
 @keyframes rotate-word {
   0% {
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 
   70% {
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) rotateY(1080deg);
-    left: 50vw;
   }
 
   100% {
-    top: 42%;
+    top: 50%;
+    left: 5%;
     transform: translate(-50%, -50%) rotateY(1080deg);
-    left: 20%;
   }
 }
 
@@ -100,6 +113,15 @@ onMounted(() => {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes underline-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 </style>
