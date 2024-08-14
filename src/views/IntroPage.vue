@@ -65,9 +65,9 @@ onMounted(() => {
       transform: translate(-50%, -50%);
       animation-fill-mode: forwards;
 
-      /* @media (max-width: 768px) {
+      @media (max-width: 768px) {
         font-size: $intro-mobile-font;
-      } */
+      }
     }
   }
 }
