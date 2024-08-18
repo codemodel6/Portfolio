@@ -35,13 +35,13 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
           </div>
           <div class="main-line">
             <img :src="velog" alt="velog" />
-            <a class="main-link" href="https://github.com/codemodel6"
+            <a class="main-link" href="https://velog.io/@codemodel6"
               >https://velog.io/@codemodel6</a
             >
           </div>
           <div class="main-line">
             <img :src="gmail" alt="gmail" />
-            <a class="main-link" href="https://github.com/codemodel6"> codemodel6@gmail.com</a>
+            <span class="main-link">codemodel6@gmail.com</span>
           </div>
           <div class="main-line">
             <img :src="phone" alt="phone" />
