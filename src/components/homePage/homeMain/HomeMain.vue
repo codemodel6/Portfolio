@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import codemodel6 from '../../../assets/styles/image/homeImg/codemodel6.jpg'
+import codemodel6 from '../../../assets/styles/image/homeImg/codemodel6.png'
 import TheMarquee from '../../molecule/TheMarquee.vue'
 import TheTitle from '../../molecule/TheTitle.vue'
 import skill from '../../../assets/styles/image/homeImg/skill.png'
@@ -74,13 +74,14 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
   height: 100%;
 
   @media (max-width: 768px) {
+    align-items: center;
     justify-content: center;
   }
 
   img {
     margin-top: 5%;
     margin-right: 3%;
-    width: 48%;
+    width: 55%;
     height: 65%;
     border-radius: 50%;
 
