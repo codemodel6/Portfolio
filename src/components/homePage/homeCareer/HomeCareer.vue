@@ -10,7 +10,7 @@ import CareerList from './CareerList.vue'
       <div class="company-wrapper">
         <span class="company-title">HNWorks</span>
         <span class="company-contents">현대오토에버 우수 협력사 기업</span>
-        <span class="company-day">2023.05 - 재직중</span>
+        <span class="company-day">2023.05 - 2024.11</span>
       </div>
       <div class="career-wrapper">
         <CareerList />
