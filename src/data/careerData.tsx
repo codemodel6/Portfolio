@@ -65,7 +65,7 @@ export const careerData2: CareerProject = {
       '- 재귀 알고리즘을 사용해 효율적인 데이터 정렬 작업 진행 \n- 스토리지를 사용한 로그인 및 로그인 유지 작업 진행 \n- React의 파일 시스템을 사용해 csv 파일 첨부 및 파일 다운로드 기능 제작 \n- express를 통한 csv 파싱 작업 및 데이터 json 변환/통신 작업 진행 및 프론트, 파일 백엔드, 머신러닝 백엔드를 연결해주는 api 통신 작업 진행 \n- chart.js를 사용한 데이터 시각화 작업 진행 \n- 사용자 UI/UX 편의를 위한 애니메이션을 사용한 모달, 캔버스 자체 제작 \n- Bootstrap을 사용한 스크롤바, 드롭다운, 프로그래스바 제작 \n- 사용자 편의를 생각한 학습 데이터 조회 게시판 제작'
      },
   {
-    title: '[에이치앤웍스] Oracle DB Dictionary',
+    title: '[에이치앤웍스] OracleDB Dictionary',
     contents:
       '- Oracle Database 함수, 실행 결과 및 쿼리를 수집·정리하여 학습 자료 구축 \n- SPA(Single Page Application) 구조를 적용하여 페이지 전환 없는 편리한 학습 제공 \n- styled-components 기반 공통 스타일 모듈 설계를 통해 UI 일관성 확보 \n- 함수 유형별 학습이 가능한 구조화된 목차 제작' 
     },
