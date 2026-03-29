@@ -12,7 +12,7 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
 <template>
   <div class="global-full-block">
     <TheMarquee />
-    <TheTitle title="Frontend Developer" />
+    <TheTitle title="Developer" />
     <div class="home-main-wrapper">
       <div class="main-image-wrapper">
         <img :src="codemodel6" :alt="codemodel6" />

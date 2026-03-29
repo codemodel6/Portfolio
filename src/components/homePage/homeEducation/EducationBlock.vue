@@ -73,7 +73,7 @@ const props = defineProps<{
       font-size: $xsmall;
       margin-top: 0.45rem;
       margin-bottom: 0.45rem;
-      line-height: 1.7;
+      line-height: 1.6;
       color: rgba($White100, 0.82);
       text-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
     }

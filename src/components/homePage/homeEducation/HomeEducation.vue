@@ -1,8 +1,8 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import TheTitle from '@/components/molecule/TheTitle.vue'
 import CertificateBlock from './CertificateBlock.vue'
 import EducationBlock from './EducationBlock.vue'
-import { schoolData, codeData, certificateData } from '@/data/educationData'
+import { schoolData, codeData, certificateData, languageData } from '@/data/educationData'
 </script>
 
 <template>
@@ -15,6 +15,8 @@ import { schoolData, codeData, certificateData } from '@/data/educationData'
         <EducationBlock :educationData="codeData" />
         <div class="home-education-title">자격증</div>
         <CertificateBlock :certificateData="certificateData" />
+        <div class="home-education-title">어학</div>
+        <CertificateBlock :certificateData="languageData" />
       </div>
     </div>
   </div>

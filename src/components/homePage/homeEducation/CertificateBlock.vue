@@ -48,6 +48,7 @@ const props = defineProps<{
     .certificate-span {
       @include centerColumn;
       height: 2.5rem;
+      text-align: center;
       font-weight: bold;
       color: rgba($White100, 0.88);
       text-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
