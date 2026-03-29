@@ -23,7 +23,7 @@ import phone from '../../../assets/styles/image/homeImg/phone.jpg'
           <span class="title-birth">1998.04.21.</span>
         </div>
         <span class="main-sub-title"
-          >코드 품질, 커뮤니케이션, 책임감을 중요시 여기는<br />프론트엔드 개발자 입니다</span
+          >코드 품질, 커뮤니케이션, 책임감을 중요시 여기는<br />개발자 입니다</span
         >
         <img class="main-skill-img" :src="skill" />
         <div class="main-info">

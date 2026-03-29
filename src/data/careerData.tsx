@@ -1,42 +1,71 @@
-interface CarrerProps {
+﻿export interface CareerItem {
   title: string
   contents: string
 }
 
-export const careerData: CarrerProps[] = [
+export interface CareerProject {
+  companyTitle: string
+  companyContents: string
+  companyDay: string
+  careers: CareerItem[]
+}
+
+
+
+export const careerData1: CareerProject = {
+  companyTitle: '한컴케어링크',
+  companyContents: '한글과컴퓨터 계열사',
+  companyDay: '2025.02 - NOW',
+  careers: [
   {
-    title: 'VMS',
+    title: '케어해',
     contents:
-      '기존 킷캣버전의 어플리케이션에 CSS 반응형 작업과 버전 업그레이드 그리고 Nexacro 개선 작업을 하는 프로젝트입니다.  Android Studio를 통해 SDK 파일을 만들어 Mobile Able에 연결하였으며 gradle 변환을 진행하였습니다. 4년차 퍼블리셔분과 CSS 작업을 같이 진행하였는데, 상위 컴포넌트가 하위 컴포넌트를 감싸는데 높이가 없는 상황이 있었습니다. 퍼블리셔분이 이 문제를 어려워 하여 저에게 맡겨주셔서 살펴보니 position: fixed가 설정되어있었습니다. 이후 display: flex 방식으로 변경하여 문제를 해결하였으며 퍼블리셔 분의 인정을 받았었습니다.  Nexacro 작업으로는 현대 오토에버의 공용 함수를 많이 사용하였으며 권한, 화면에 따른 많은 분기 처리를 진행하였습니다.  유지보수 및 개선을 위한 작업이기 때문에 다른 사람의 코드를 이해한 후 연관되는 화면에 오류가 없는지 꼼꼼하게 확인하며 진행했습니다.'
+   '- 머신러닝 API 연동을 통한 사용자의 질병 발생 확률 예측 서비스 개발\n- 대규모 트래픽 유입으로 발생한 Cloud NAT 포트 고갈 장애 원인 분석 및 서비스 안정화\n- 부하 테스트 기반 Cloud Run 인프라 용량 산정 및 CPU/Memory·Auto Scaling 설정\n- 하드코딩된 이용약관을 DB 기반 에디터 관리 구조로 전환하여 법적 요구사항 대응 및 모듈화\n- Rich Text Editor 기반 텍스트 편집기 개발 및 저장 데이터 토큰화 적용 (DB 저장 성능 약 80% 개선)\n- 설문조사를 위한 문진표 공통 템플릿 설계·개발 및 기존 설문 구조 공통화, DB 관리 체계 구축\n- 운영팀 요청 기반 회원 데이터 처리 및 서비스 운영 이슈 대응\n- Gemini CLI 도입을 통해 개발 및 유지보수 생산성 향상\n- Codex 및 Codex CLI 도입 후 프로젝트 구조 분석 및 이해를 위한 명령어 스크립트 제작·공유\n- FigmaMake 활용 PDF 제작 자동화 스크립트 공유로 문서 제작 시간 단축\n- Google 스프레드시트 Gemini 기능을 활용하여 기획 요구사항을 JSON 구조로 변환하는 가이드 제작 및 공유\n- AI Agent 기반 업무 자동화 모델 도입 및 적용 검토'   
   },
   {
-    title: '표준\n프레임워크',
+    title: '케어해 어드민',
     contents:
-      '프론트는 타임리프 환경에 순수 바닐라 JS, 백으로는 스프링부트를 사용한 프로젝트였습니다. 프론트는 타임리프의 layout.js에 각자 만드는 컴포넌트를 넣는 방식이였으며, UI는 ToastUI를 사용했습니다. 공통함수가 계속 변경되어 오류가 빈번한 어려움이 있었지만, 오류가 날 때 마다 공통함수에 접근해 어떻게 만들었는지 파악한 후 그에 맞춰 수정하는 좋은 경험을 했습니다.  백엔드의 구조는 MVC 패턴이였는데 처음에 구조가 이해되지 않아 어려움이 있었습니다. 하지만 야근 및 집에서의 spring boot 개인 공부를 진행해 프로젝트를 진행했고, 이후엔 어느정도 익숙해져 능숙하게 진행했습니다. 이후 사원의 프로젝트를 평가하는 페이지를 제작하였으며 달력의 데이트피커의 시작 및 끝 날짜의 예외처리 공통 함수를 제작하였습니다.'
-  },
+      '- 레거시 프로젝트의 회원 관리 기능 분석 후 Next.js 전환 (쿼리 구조 개선 및 통신 최적화를 통해 데이터 조회 성능 약 80% 개선)\n- 엑셀 업로드 기능 트랜잭션 처리 및 데이터 가공 구조 개선 (업로드 속도 약 90% 개선 및 데이터 제한 제거)\n- Chart.js 기반 통계 대시보드 개발 및 프론트엔드 데이터 가공 처리\n- react-pdf-renderer를 활용하여 그래프 및 테이블이 포함된 통계 리포트 PDF 생성 기능 개발\n- 신규 기능 개발을 위한 DB 테이블 설계 및 관리' },
   {
-    title: 'NIDS',
+    title: 'GX - 유전체 분석 병원 관리 시스템',
     contents:
-      '현대 오토에버의 차량 네트워크 프로젝트로 Nexacro 및 Oracle DB 사용한 프로젝트입니다. Nexacro의 심화 프로젝트로 3중 깊이를 가지고 7개 필터를 가진 콤보박스 화면을 Nexacro 및 JS 로직을 사용해서 구현하였습니다. 이 화면에서의 Oracle 쿼리 작업으로, 기존 테이블의 추가로 join한 테이블의 결과를 하나의 열로 만들어야 했는데 이때 Pivot 함수를 사용해서 문제를 해결했었습니다. 또한 4개의 Table을 join한 6개의 테이블 결과를 비교하는 Oracle 쿼리를 작성했었는데 with temp절로 6개의 테이블의 결과를 묶고 이후 left join, light join, group by를 진행해 비교 연산을 만들었습니다. Oracle의 group by에 대해 많이 공부했고 알게되었습니다. 유지보수 프로젝트로써 한 화면을 변경하면 연관된 다른 화면이 많았기 때문에 어디에 영향을 끼치는지, 오류는 없는지 등 꼼꼼하게 확인하는 능력을 키웠습니다.'
-  },
+      '- Next.js + TypeScript 기반의 프론트엔드 로직 개발\n- 커스텀 React Query 훅을 활용한 백엔드 통신 및 데이터 관리\n- 커스텀 Form Field와 Grid 문법을 적용한 게시판 관리 기능 구현\n- Zod를 활용한 popover 기반 실시간 Validation 제작\n- React-Pdf-Renderer를 통한 컴포넌트 PDF 문서화 기능 개발\n- Excel 업로드/다운로드 및 특정 필드 타입 변환 기능 구현\n- 공통 서명 컴포넌트 개발 및 Firebase를 사용한 전자서명 이미지 관리\n- Nest.js 기반 모듈-서비스-컨트롤러 아키텍처 설계 및 개발\n- 트랜잭션을 사용한 멀티 테이블 업데이트 및 오류 관리 로직 구현\n- TypeORM 엔티티 기반의 커스텀 쿼리 작성\n- 엔티티 연관관계 순환 참조 문제 해결\n- Base64 긴 평문을 Firebase 이미지로 변환하여 DB 용량 약 30% 절감\n- 커스텀 훅 분석 및 도입을 통한 코드 품질 개선\n- GCP Cloud Run 프로젝트 초기 세팅 및 Cloud SQL 연결\n- 외부 IP 차단 및 인스턴스 동시 요청 수/커넥션 풀 모니터링\n- YAML 기반 GCP & GitLab 자동화 배포 파이프라인 구축\n- Google Chat 연동을 통한 배포 진행 상황 알림 설정\n- Docker를 사용한 모노레포 프로젝트 배포 세팅 및 진행\n- 레거시 Tomcat 서버 이전 후 가비아 서브 도메인 IPv4 변경 작업 수행\n- History 테이블 트리거 설정 및 관리\n- 서비스 발전을 위한 신규 컬럼 추가 및 DB/스키마 변경\n- MariaDB → MySQL DB Dump 복호화 및 마이그레이션 진행\n- 사용자 요구사항에 따른 데이터 처리 진행' 
+    },
+  ]
+}
+
+export const careerData2: CareerProject = {
+  companyTitle: 'HNWorks',
+  companyContents: '현대오토에버 우수 협력사 기업',
+  companyDay: '2023.05 - 2024.11',
+  careers: [
   {
-    title: '머신러닝\n프로젝트',
+    title: '한국전기연구원 ML 시스템 (2차)',
     contents:
-      '머신러닝 프로젝트에 프론트를 담당했습니다. React로 작업했으며 이후 csv 파일 및 파일 설정을 위한 백엔드가 필요해져 백을 맡을 인원이 없어 Node.js로 백엔드도 함께 진행하였습니다. React의 경우 반복되는 컴포넌트, 함수를 따로 관리하였고 디자인, 퍼블리싱, 프론트 작업을 맡았었습니다. 부트스트랩의 드롭다운, 스위치, 슬라이더 등을 가져와 수정하여 사용하였으며 react-chart.js 의 그래프를 사용하여 데이터를 정렬하여 보여주었습니다. 또한 선택한 데이터의 수 만큼 4번 필터링 하는 기능이 필요하여 재귀 함수를 사용해 구현하였습니다. 백의 경우 통신을 위해 express를 사용하였으며 fs와 csv-parser을 사용해 csv 파싱을 진행하였습니다. json을 가공할 때에는 시간복잡도를 생각해 최대한 효율적인 코드를 작성하려고 노력했습니다. 또한 multer을 사용해 파일을 업로드 및 다운로드 하는 로직을 제작하였습니다.'
-  },
+      '- 백엔드 서버로 파일을 전달하는 모듈 공통화 작업 진행\n- React Query 캐시를 활용한 데이터 관리로 통신 자원 효율화\n- JavaScript → TypeScript 변환 리팩토링 진행\n- 재사용 가능한 함수 및 컴포넌트 구조 리팩토링\n- Chart.js 기반 데이터 시각화 고도화\n- 머신러닝 학습 방식 변경에 따른 데이터 변환 리팩토링'
+     },
   {
-    title: '군수\n프로젝트',
+    title: '현대 VMS 프로젝트',
     contents:
-      '현대오토에버의 군수 프로젝트로 Nexacro 및 Oracle DB 사용한 프로젝트입니다. 기존 JSP 화면으로 만들어진 군수 프로젝트를 넥사크로로 변환하여 개선하는 프로젝트였습니다. 화면정의서가 나오지 않아 JSP 화면의 로직 및 코드를 보며 화면을 제작했기 때문에 부족한점이 많았고, 화면을 많이 뒤엎고 만들고를 반복하여 넥사크로에 대해 많이 공부했었습니다. 또한 Oracle join을 이용해 테이블을 연관 테이블을 join한 후Select, Insert, Update, Delete 문을 사용해 쿼리를 짰습니다. 실제로 DB를 사용해보며 기본키, 외래키 등 DB와 관련된 많은 공부를 하였습니다. 현대 오토에버의 공통 함수를 사용하였기 때문에 대규모 프로젝트의 파일 구조에 대해서도 알아갔던 프로젝트입니다.'
-  },
+      '- 특정 시간 배치 작업에 DB 조회 쿼리를 추가하여 메일 발송 기능 구현\n- 요청 기반 JSON 응답 JSP 페이지 제작 및 통신 처리\n- Android KitKat → SDK 33(Tiramisu) 버전 업그레이드\n- JSP 기반 페이지 반응형 CSS 적용\n- Nexacro14 기반 파일 첨부 게시판 기능 개발\n- 공지사항 팝업 페이지 기능 구현\n- Oracle DML 기반 유지보수 작업 수행'
+     },
   {
-    title: 'Nexacro\n프로젝트',
+    title: '사내 평가 프로젝트',
     contents:
-      'Nexacro 실무에 도입하기 전 Nexacro에 대해 처음으로 공부해본 프로젝트였습니다. 기본적으로 dataset과 grid에 대해 공부하였으며 Nexacro가 어떻게 서버와 통신하는지, xml 파일에 쿼리를 어떻게 작성하는지 등을 배웠습니다. 이후 활용하기위해 책상 자리바꾸기, AI와 가위바위보, 팩맨 등의 게임을 만들며 Nexacro에 대해 공부한 프로젝트입니다.'
-  },
+      '- Thymeleaf 기반 바닐라 JS 동적 페이지 개발\n- 유연한 데이터 대응을 위한 공통 날짜/시간 함수 모듈 설계\n- Spring Boot MVC 기반 백엔드 로직 구현 및 MariaDB 쿼리 작성\n- toastUI 기반 검색 기능 구현'
+     },
   {
-    title: 'Oracle\nTo\nMaria',
+    title: '현대 NIDS 프로젝트',
     contents:
-      'Oracle DB는 사용하려면 돈이 들기 때문에 기존 Oracle의 쿼리 규칙을 Maria의 쿼리 규칙으로 변환하는 프로젝트입니다. Python을 사용해 제작하였으며 socket을 통해 통신하였습니다. Oracle의 DML을 변환하는 것을 목표로 하였으며 DBeaver를 사용하여 쿼리 로그를 가져와 Python으로 변환하였습니다. Python으로 변환할 함수들을 모듈로 만들어 재사용 및 유지관리 하기 쉽도록 제작하였고, Oracle 쿼리 로그를 Marai 쿼리 로그로 변환하는 작업을 진행했었습니다.'
-  }
-]
+      '- 3중 depth UI 구조(콤보박스/라디오) 사용자 편의 화면 구현\n- 600줄 이상의 복합 SQL 작성 (with, join, group by 활용)\n- Oracle pivot을 활용한 데이터 시각화 구조 개선\n- Oracle DML 기반 유지보수 작업 수행'
+     },
+  {
+    title: '한국전기연구원 ML 시스템 (1차)',
+    contents:
+      '- 재귀 알고리즘을 활용한 데이터 정렬 로직 구현\n- 로그인 및 세션 유지 기능 구현\n- CSV 파일 업로드/다운로드 기능 개발\n- Express 기반 CSV 파싱 및 JSON 변환 API 구현\n- 머신러닝 백엔드와의 API 통신 연결\n- Chart.js 기반 데이터 시각화 구현\n- 애니메이션 기반 모달 및 캔버스 UI 구현\n- Bootstrap 기반 UI 컴포넌트 구현\n- 학습 데이터 조회 게시판 개발'
+     },
+  ]
+}
+
+
+export const careerProjects: CareerProject[] = [careerData1, careerData2]
