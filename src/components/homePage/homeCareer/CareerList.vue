@@ -64,7 +64,7 @@ onMounted(async () => {
       :ref="(element) => setProjectSectionRef(element, projectIndex)"
       class="project-section"
     >
-      <div v-if="projectIndex > 0" class="project-divider">
+      <div class="project-divider">
         <span class="project-divider-line"></span>
         <span class="project-divider-text">{{ project.companyTitle }}</span>
         <span class="project-divider-line"></span>
@@ -104,7 +104,7 @@ onMounted(async () => {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  margin: 3rem 0 2rem;
+  margin-bottom: 2rem;
   color: rgba($White100, 0.92);
 }
 

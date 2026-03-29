@@ -30,8 +30,14 @@ const props = defineProps<{
   width: 100%;
   height: 210px;
   margin-bottom: 20px;
-  border-radius: 15px;
-  background-color: $Sub100;
+  border: 1px solid rgba($White100, 0.14);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(160, 199, 255, 0.06) 100%);
+  backdrop-filter: blur(8px);
+  box-shadow:
+    inset 0 1px 0 rgba($White100, 0.06),
+    0 18px 36px rgba(0, 0, 0, 0.16);
 
   .certificate-wrapper {
     @include centerColumn;
@@ -43,6 +49,8 @@ const props = defineProps<{
       @include centerColumn;
       height: 2.5rem;
       font-weight: bold;
+      color: rgba($White100, 0.88);
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
     }
   }
 }

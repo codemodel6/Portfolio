@@ -23,15 +23,33 @@ import { schoolData, codeData, certificateData } from '@/data/educationData'
 <style lang="scss">
 @import '@/assets/styles/global/GlobalDisplay.scss';
 @import '@/assets/styles/color/ColorNote.scss';
+$education: '../../../assets/styles/image/careerImg/education.jpg';
 
 .home-education-wrapper {
   @include centerColumn;
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #b0bfef;
-  color: $Black100;
+  overflow: hidden;
+  color: $White100;
+  background-image: url(#{$education});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(7, 16, 31, 0.44) 0%, rgba(10, 22, 40, 0.36) 45%, rgba(8, 18, 34, 0.48) 100%),
+      linear-gradient(120deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+  }
 
   .home-education-with {
+    position: relative;
+    z-index: 1;
     width: 60%;
     height: 100%;
     display: flex;
@@ -44,9 +62,14 @@ import { schoolData, codeData, certificateData } from '@/data/educationData'
   }
 
   .home-education-title {
+    position: relative;
     font-size: $large;
     width: 100%;
-    margin-bottom: 10px;
+    margin: 0 0 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: rgba($White100, 0.94);
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
   }
 }
 </style>
